@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-factor_list = [20, 19, 17, 16, 13, 11, 9, 7, 3]
+factor_list = [20, 16, 9]
 x = 0
 found = False
 
