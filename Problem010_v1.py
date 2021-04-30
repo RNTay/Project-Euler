@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-from datetime import datetime
-startTime = datetime.now()
 
 
 # Primality test code taken from Wikipedia
