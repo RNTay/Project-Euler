@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 # Primality test code taken from Wikipedia
 def is_prime(n: int) -> bool:
     """Primality test using 6k+-1 optimization."""
