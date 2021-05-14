@@ -6,8 +6,8 @@ https://projecteuler.net/archives
 
 
 ## Completed
-### Total: 15
+### Total: 16
 1–10,  
 15, 16, 20,  
 40,  
-41
+41, 48
