@@ -6,7 +6,7 @@ https://projecteuler.net/archives
 
 
 ## Completed
-### Total: 16
+### Total: 17
 1–10,  
 15, 16, 20,  
 25,  
