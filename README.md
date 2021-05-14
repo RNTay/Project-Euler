@@ -9,5 +9,6 @@ https://projecteuler.net/archives
 ### Total: 16
 1–10,  
 15, 16, 20,  
+25,  
 40,  
 41, 48
