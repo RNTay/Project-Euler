@@ -7,7 +7,7 @@ https://projecteuler.net/archives
 
 ## Completed
 ### Total: 15
-1–10  
-15, 16, 20  
-40
+1–10,  
+15, 16, 20,  
+40,  
 41
