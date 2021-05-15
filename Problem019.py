@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import datetime
 
 this_day = datetime.date(1901, 1, 1)
