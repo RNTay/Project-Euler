@@ -6,10 +6,10 @@ https://projecteuler.net/archives
 
 
 ## Completed
-### Total: 19
+### Total: 20
 1–10,  
 13, 15, 16, 20,  
 25,  
-40,  
+36, 40,  
 41, 48,  
 53
