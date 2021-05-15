@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-# save numbers in text_file.txt, ending the file with a newline.
+# Save the numbers in text_file.txt, line by line,
+# ending the file with a newline.
 
 digits_file = open('text_file.txt', 'r')
 digits_line = digits_file.readline()
