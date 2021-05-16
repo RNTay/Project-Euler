@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def primes_below(n: int) -> list:
+def primes_up_to(n: int) -> list:
     """Returns the list all primes [2 .. n] using
     the sieve of Eratosthenes."""
     if n <= 1:
