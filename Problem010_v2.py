@@ -24,4 +24,4 @@ def primes_up_to(n: int) -> list:
 
 
 limit = 1_999_999
-print(sum(primes_below(limit)))
+print(sum(primes_up_to(limit)))
