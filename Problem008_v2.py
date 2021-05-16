@@ -3,7 +3,7 @@
 # Save the numbers in text_file.txt, line by line,
 # ending the file with a newline.
 
-digits_file = open('text_file.txt', 'r')
+digits_file = open('text-file.txt', 'r')
 digits_line = digits_file.readline()
 digits_string = ''
 while len(digits_line) > 0:
