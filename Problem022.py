@@ -32,25 +32,28 @@ def merge_sort(array: list, p: int, r: int):
         merge(array, p, q, r)  # merge sub-arrays array[p..q] and array[q+1..r]
 
 
-names_file = open('text-file.txt', 'r')
+names_file = open('names.txt', 'r')
 names = names_file.readline()
 names_file.close()
 
+names = names.replace("\"", "")
 names = names.split(',')
-for name in names:
-    name_no_quotes = name[1:-1]
-    names[names.index(name)] = name_no_quotes
 
-merge_sort(names, 0, len(names)-1)
+len_names = len(names)
 
-all_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-all_letter_scores = [_ for _ in range(1, 27)]
+merge_sort(names, 0, len_names-1)
+
+letter_and_score = dict()
+letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+for score in range(1, 27):
+    letter_and_score[letters[score-1]] = score
+
 total_name_scores = 0
-for name in names:
+for name_index in range(len_names):
+    name = names[name_index]
     name_score = 0
     for letter in name:
-        letter_score = all_letter_scores[all_letters.index(letter)]
-        name_score += letter_score
-    name_score = name_score * (names.index(name) + 1)
+        name_score += letter_and_score[letter]
+    name_score = name_score * (name_index + 1)
     total_name_scores += name_score
 print(total_name_scores)
