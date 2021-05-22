@@ -2,7 +2,8 @@ from functools import cache
 
 
 @cache
-def collatz_length(n):
+def collatz_length(n: int) -> int:
+    """Returns the length of the Collatz sequence."""
     if n == 1:
         return 1
     else:
