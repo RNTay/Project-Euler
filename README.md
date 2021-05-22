@@ -6,9 +6,9 @@ https://projecteuler.net/archives
 
 
 ## Completed
-### Total: 28
+### Total: 29
 1–10,  
-13, 14, 15, 16, 19, 20,  
+11, 13, 14, 15, 16, 19, 20,  
 22, 25,  
 36, 37, 40,  
 41, 43, 48,  
