@@ -15,7 +15,7 @@ def collatz_length(n: int) -> int:
 
 longest = 0
 number_with_longest_chain = 0
-for x in range(1, 1_000_001):
+for x in range(1, 1_000_000):
     this_length = collatz_length(x)
     if this_length > longest:
         longest = this_length
