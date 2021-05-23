@@ -3,7 +3,7 @@
 # Copy and paste the triangle of numbers into a file named 'triangle.txt'.
 
 triangle = []
-with open('text-file.txt', 'r') as triangle_file:
+with open('triangle.txt', 'r') as triangle_file:
     triangle_lines = triangle_file.readlines()
 
 for line in triangle_lines:
