@@ -8,7 +8,7 @@ https://projecteuler.net/archives
 ## Completed
 ### Total: 31
 1–10,  
-11, 12 13, 14, 15, 16, 17, 19, 20,  
+11–20,  
 22, 25,  
 36, 37, 40,  
 41, 43, 48,  
