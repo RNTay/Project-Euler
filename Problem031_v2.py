@@ -14,11 +14,11 @@ def ways(target, largest_available_coin_index):
     global coins
     if largest_available_coin_index <= 0:
         return 1
-    res = 0
+    result = 0
     while target >= 0:
-        res = res + ways(target, largest_available_coin_index-1)
+        result = result + ways(target, largest_available_coin_index-1)
         target = target - coins[largest_available_coin_index]
-    return res
+    return result
 
 
 print(ways(amount, len(coins)-1))
