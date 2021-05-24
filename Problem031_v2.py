@@ -12,13 +12,13 @@ amount = 200
 @cache
 def ways(target, largest_available_coin_index):
     global coins
-    if largest_available_coin_index <= 1:
+    if largest_available_coin_index <= 0:
         return 1
     res = 0
     while target >= 0:
         res = res + ways(target, largest_available_coin_index-1)
-        target = target - coins[largest_available_coin_index-1]
+        target = target - coins[largest_available_coin_index]
     return res
 
 
-print(ways(amount, len(coins)))
+print(ways(amount, len(coins)-1))
