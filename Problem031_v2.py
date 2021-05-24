@@ -3,10 +3,13 @@
 # pseudocode taken from the overview:
 # https://projecteuler.net/overview=031
 
+from functools import cache
+
 coins = [1, 2, 5, 10, 20, 50, 100, 200]
 amount = 200
 
 
+@cache
 def ways(target, largest_available_coin_index):
     global coins
     if largest_available_coin_index <= 1:
