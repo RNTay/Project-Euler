@@ -6,11 +6,11 @@ https://projecteuler.net/archives
 
 
 ## Completed
-### Total: 36
+### Total: 37
 1–10,  
 11–20,  
 22, 24, 25,  
-31, 36, 37, 40,  
+31, 33, 36, 37, 40,  
 41, 42, 43, 48,  
 53, 55, 56,  
 67,  
