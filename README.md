@@ -6,7 +6,7 @@ https://projecteuler.net/archives
 
 
 ## Completed
-### Total: 37
+### Total: 38
 1–10,  
 11–20,  
 22, 24, 25,  
@@ -14,4 +14,4 @@ https://projecteuler.net/archives
 41, 42, 43, 48,  
 53, 55, 56,  
 67,  
-92
+92, 97
