@@ -17,12 +17,23 @@ def is_prime(p: int) -> bool:
 max_number = 0
 max_a, max_b = 0, 0
 for a in range(-999, 1000):
-    for b in range(-999, 1001, 2):
-        count_primes = 0
-        n = 0
-        while is_prime(n**2 + a*n + b):
-            n += 1
-        if n > max_number:
-            max_number = n
-            max_a, max_b = a, b
+    # since n = 0 must give a prime,
+    # b > 0 and b is prime
+    for b in range(6, 1001, 6):
+        if is_prime(b + 1):
+            count_primes = 1
+            n = 1
+            while is_prime(n**2 + a*n + (b + 1)):
+                n += 1
+            if n > max_number:
+                max_number = n
+                max_a, max_b = a, (b + 1)
+        if is_prime(b - 1):
+            count_primes = 1
+            n = 1
+            while is_prime(n ** 2 + a * n + (b - 1)):
+                n += 1
+            if n > max_number:
+                max_number = n
+                max_a, max_b = a, (b - 1)
 print(max_a * max_b)
