@@ -17,7 +17,7 @@ def is_prime(p: int) -> bool:
 max_number = 0
 max_a, max_b = 0, 0
 for a in range(-999, 1000):
-    for b in range(-999, 1000):
+    for b in range(-999, 1001):
         count_primes = 0
         n = 0
         while is_prime(n**2 + a*n + b):
