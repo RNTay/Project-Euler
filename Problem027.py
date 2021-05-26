@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+from functools import cache
+
+
+@cache
 def is_prime(p: int) -> bool:
     """Primality test using 6k+-1 optimisation."""
     if p <= 3:
