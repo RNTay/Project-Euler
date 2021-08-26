@@ -25,20 +25,21 @@ def primes_up_to(n: int) -> list:
 
 primes = primes_up_to(999_999)
 last_prime = primes[-1]
-last_index = len(primes) - 1
 best_prime, best_length = 0, 0
 
 for a in range(len(primes) - 1):
+    print(primes[a])
     consecutive_sum = primes[a]
     sum_length = 1
-    next_index = a + 1
-    this_best_prime, this_best_length = 0, 1
+    this_best_prime, this_best_length = 0, 0
 
-    while (consecutive_sum <= last_prime) and (next_index <= last_index):
-        consecutive_sum += primes[next_index]
+    for b in range(a+1, len(primes)):
+        consecutive_sum += primes[b]
         sum_length += 1
-        next_index += 1
-        if (consecutive_sum in primes) and (sum_length > 1):
+
+        if consecutive_sum >= last_prime:
+            break
+        elif consecutive_sum in primes:
             this_best_prime = consecutive_sum
             this_best_length = sum_length
 
