@@ -37,7 +37,7 @@ for a in range(len(primes) - 1):
         consecutive_sum += primes[b]
         sum_length += 1
 
-        if consecutive_sum >= last_prime:
+        if consecutive_sum > last_prime:
             break
         elif consecutive_sum in primes:
             this_best_prime = consecutive_sum
