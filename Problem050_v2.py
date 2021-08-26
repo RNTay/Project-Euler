@@ -42,7 +42,6 @@ primes = primes_up_to(int(limit/21) + 21)
 best_prime, best_length = 0, 0
 
 for a in range(len(primes) - 1):
-    print(primes[a])
     consecutive_sum = primes[a]
     sum_length = 1
     this_best_prime, this_best_length = 0, 0
