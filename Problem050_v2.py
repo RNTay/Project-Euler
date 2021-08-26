@@ -39,9 +39,11 @@ def is_prime(n: int) -> bool:
 
 limit = 1_000_000
 primes = primes_up_to(int(limit/21) + 21)
+all_primes_under_1_mil = set(primes_up_to(limit))
 best_prime, best_length = 0, 0
 
 for a in range(len(primes) - 1):
+    print(primes[a])
     consecutive_sum = primes[a]
     sum_length = 1
     this_best_prime, this_best_length = 0, 0
@@ -52,7 +54,7 @@ for a in range(len(primes) - 1):
 
         if consecutive_sum >= limit:
             break
-        elif is_prime(consecutive_sum):
+        elif consecutive_sum in all_primes_under_1_mil:
             this_best_prime = consecutive_sum
             this_best_length = sum_length
 
