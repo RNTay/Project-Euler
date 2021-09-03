@@ -6,12 +6,12 @@ https://projecteuler.net/archives
 
 
 ## Completed
-### Total: 59
+### Total: 60
 1–10,  
 11–20,  
 21–30,  
 31–40,  
 41–50,  
-52, 53, 55, 56,  
+52, 53, 55, 56, 57,  
 67,  
 91, 92, 97, 99
