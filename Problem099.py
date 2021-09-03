@@ -5,7 +5,7 @@ from math import log2
 largest = 0
 line_counter = 0
 best_line = 0
-with open('text-file.txt', 'r') as base_exps_file:
+with open('base_exp.txt', 'r') as base_exps_file:
     for line in base_exps_file:
         line_counter += 1
         base, exp = tuple(map(int, line[:-1].split(',')))
