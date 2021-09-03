@@ -40,13 +40,12 @@ def check(digits: list, target_number: int):
 
 wanted_products = set()
 numbers = '123456789'
-for length in range(1, 9):
-    for p in permutations(numbers, length):
-        product = ''
-        for p_i in p:
-            product += p_i
-        if check(remaining_digits(product), int(product)):
-            wanted_products.add(int(product))
+for p in permutations(numbers, 4):
+    product = ''
+    for p_i in p:
+        product += p_i
+    if check(remaining_digits(product), int(product)):
+        wanted_products.add(int(product))
 print(sum(wanted_products))
 
 
