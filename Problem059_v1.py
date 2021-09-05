@@ -12,7 +12,7 @@ def decrypt(cipher_text: str, key: str):
     return plain_text
 
 
-with open('text-file.txt', 'r') as cipher_text_file:
+with open('p059_cipher.txt', 'r') as cipher_text_file:
     cipher = cipher_text_file.readline()
 
 common_words = ['the', 'and', 'that', 'have', 'for', 'not', 'with']
