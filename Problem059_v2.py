@@ -5,7 +5,7 @@ import string
 with open('text-file.txt', 'r') as cipher_text_file:
     cipher = cipher_text_file.readline().split(',')
 
-common_words = ['the', 'and', 'that', 'have', 'for', 'not', 'with']
+common_words = ['the', 'and', 'that']
 
 best_count = 0
 best_decryption = ''
