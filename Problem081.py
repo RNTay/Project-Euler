@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-with open('text-file.txt', 'r') as matrix_file:
+with open('matrix.txt', 'r') as matrix_file:
     matrix = []
     for line in matrix_file.readlines():
         fixed_line = list(map(int, line.replace('\n', '').split(',')))
