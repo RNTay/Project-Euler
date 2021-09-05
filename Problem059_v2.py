@@ -22,6 +22,7 @@ for letter1 in string.ascii_lowercase:
         for letter3 in string.ascii_lowercase:
             for index3 in range(2, len(cipher), 3):
                 decryption_array[index3] = chr(int(cipher[index3]) ^ ord(letter3))
+            
             decrypted = ''.join(decryption_array)
             common_words_count = 0
             for word in common_words:
