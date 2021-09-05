@@ -2,7 +2,7 @@
 
 import string
 
-with open('text-file.txt', 'r') as cipher_text_file:
+with open('p059_cipher.txt', 'r') as cipher_text_file:
     cipher = cipher_text_file.readline().split(',')
 
 common_words = ['the', 'and', 'that']
