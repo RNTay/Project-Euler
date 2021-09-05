@@ -17,7 +17,6 @@ with open('text-file.txt', 'r') as cipher_text_file:
 
 common_words = ['the', 'and', 'that', 'have', 'for', 'not', 'with']
 
-best_key = ''
 best_count = 0
 best_decryption = ''
 for letter1 in string.ascii_lowercase:
@@ -31,7 +30,6 @@ for letter1 in string.ascii_lowercase:
             for word in common_words:
                 common_words_count += decrypted.count(word)
             if common_words_count > best_count:
-                best_key = guess_key
                 best_count = common_words_count
                 best_decryption = decrypted
 
