@@ -9,8 +9,9 @@ common_words = ['the', 'and', 'that', 'have', 'for', 'not', 'with']
 
 best_count = 0
 best_decryption = ''
+
+decryption_array = ['' for _ in range(len(cipher))]
 for letter1 in string.ascii_lowercase:
-    decryption_array = ['' for _ in range(len(cipher))]
     for index1 in range(0, len(cipher), 3):
         decryption_array[index1] = chr(int(cipher[index1]) ^ ord(letter1))
 
