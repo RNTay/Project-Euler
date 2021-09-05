@@ -3,14 +3,6 @@
 import string
 
 
-def encrypt(plain_text: str, key: str):
-    cipher_text = []
-    for plain_text_index in range(len(plain_text)):
-        key_index = plain_text_index % len(key)
-        cipher_text.append(str(ord(plain_text[plain_text_index]) ^ ord(key[key_index])))
-    return ','.join(cipher_text)
-
-
 def decrypt(cipher_text: str, key: str):
     cipher_text_numbers = cipher_text.split(',')
     plain_text = ''
