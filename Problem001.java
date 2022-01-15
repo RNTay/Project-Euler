@@ -1,4 +1,4 @@
-class sandbox {
+class Problem001 {
     public static void main(String[] args) {
         int number = 1, sum = 0;
         while (number < 1000) {
